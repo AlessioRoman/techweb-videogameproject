@@ -3,7 +3,7 @@ import SearchBox from "./SearchBox";
 
 function Header() {
 	return (
-		<div className="py-3 px-5 ring-2 border-white sticky">
+		<div className="py-3 px-5 ring-1 border-white sticky top-0 backdrop-blur-lg">
 			<div className="w-2/3 m-auto flex justify-between items-center">
 				<a href="/" className="flex gap-4 items-center">
 					<img className="w-10 h-10" src="/tabicon.png" alt="logo" />

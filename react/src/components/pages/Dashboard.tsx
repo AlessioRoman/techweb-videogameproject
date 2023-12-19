@@ -1,4 +1,12 @@
-import { pro, t1 } from "@/assets/imageIndex";
+import {
+	fnatic,
+	pro,
+	t1,
+	g2,
+	nip,
+	liquid,
+	vitality,
+} from "@/assets/imageIndex";
 
 function Dashboard() {
 	return (
@@ -23,18 +31,68 @@ function Dashboard() {
 					<span className="text-primary"> Gaming</span> house
 				</h1>
 			</div>
+
+			<div>{/*TODO TRENDING GAMES*/}</div>
+
 			<div className="flex px-5 my-40 gap-32 items-center">
 				<img src={pro} className="h-[780px] rounded-2xl" alt="proplayer" />
-				<div className="">
+				<div>
 					<h1 className="font-semibold text-2xl mb-10">
 						A word from our <span className="text-primary">Partners</span>
 					</h1>
 					<div>
-						<div className="flex items-center space-x-4">
+						<div className="flex items-center space-x-4 mb-8">
 							<img src={t1} className="h-14 w-14 rounded-full" />
 							<div className="space-y-2">
-								<h6 className="h-4 font-semibold">T1 Pro Team</h6>
-								<p className="h-4">- A paradise for gaming enthusiasts!</p>
+								<h6 className="h-4 font-semibold">T1 Pro</h6>
+								<p className="h-4 text-sm">
+									- A paradise for gaming enthusiasts!
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center space-x-4 mb-8">
+							<img src={fnatic} className="h-14 w-14 rounded-full" />
+							<div className="space-y-2">
+								<h6 className="h-4 font-semibold">Fnatic</h6>
+								<p className="h-4  text-sm">
+									- The catalog provides an exceptional shopping experience.
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center space-x-4 mb-8">
+							<img src={g2} className="h-14 w-14 rounded-full" />
+							<div className="space-y-2">
+								<h6 className="h-4 font-semibold">G2 pro</h6>
+								<p className="h-4  text-sm">
+									- We've discovered incredible games and new releases.
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center space-x-4 mb-8">
+							<img src={liquid} className="h-14 w-14 rounded-full" />
+							<div className="space-y-2">
+								<h6 className="h-4 font-semibold">Liquid</h6>
+								<p className="h-4  text-sm">
+									- Captivating design and informative content.
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center space-x-4 mb-8">
+							<img src={vitality} className="h-14 w-14 rounded-full" />
+							<div className="space-y-2">
+								<h6 className="h-4 font-semibold">Vitality</h6>
+								<p className="h-4  text-sm">
+									- Congratulations on the intuitive interface!
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center space-x-4 mb-8">
+							<img src={nip} className="h-14 w-14 rounded-full" />
+							<div className="space-y-2">
+								<h6 className="h-4 font-semibold">NiP pro</h6>
+								<p className="h-4  text-sm">
+									- Impresses with its game selection and user-experience
+								</p>
 							</div>
 						</div>
 					</div>
