@@ -1,7 +1,7 @@
 function Footer() {
 	return (
-		<div className="absolute bottom-0 w-full h-14 ring-2">
-			<div className="flex items-center h-full w-1/2 m-auto justify-between text-sm">
+		<div className="relative bottom-0 w-full h-14 ring-2">
+			<div className="flex items-center h-full w-2/3 m-auto justify-between text-sm">
 				<h1>Parthenogame&#8482; - all rights reserved - 2023</h1>
 				<p>Piccolo Valerio - Marrazzo Martina - Pennacchio Diego</p>
 				<ol className="flex gap-2">

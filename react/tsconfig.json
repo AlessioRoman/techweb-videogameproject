@@ -28,6 +28,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "public/imageIndex.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
