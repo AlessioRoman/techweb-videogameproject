@@ -7,11 +7,26 @@ import {
 	liquid,
 	vitality,
 } from "@/assets/imageIndex";
+import Gallery from "../Gallery";
 
 function Dashboard() {
 	return (
-		<div className="w-2/3 m-auto">
-			<div className="relative isolate top-64">
+		<div className="flex-col items-center justify-center lg:block w-2/3 m-auto">
+			<div className="text-center my-24">
+				<h1 className="text-5xl font-bold">
+					Welcome to the
+					<span className="text-primary"> Gaming</span> house
+				</h1>
+			</div>
+			<div className=" my-24">
+				<h1 className="text-2xl font-bold text-center">
+					Explore our <span className="text-primary"> games</span>
+				</h1>
+				<div className="flex justify-center items- m-auto">
+					<Gallery />
+				</div>
+			</div>
+			<div className="relative isolate top-36">
 				<div
 					aria-hidden="true"
 					className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -25,16 +40,7 @@ function Dashboard() {
 					/>
 				</div>
 			</div>
-			<div className="text-center my-36">
-				<h1 className="text-5xl font-bold">
-					Welcome to the
-					<span className="text-primary"> Gaming</span> house
-				</h1>
-			</div>
-
-			<div>{/*TODO TRENDING GAMES*/}</div>
-
-			<div className="flex px-5 my-40 gap-32 items-center">
+			<div className="flex flex-col justify-center items-center gap-20 xl:px-5 xl:my-40 xl:gap-32 xl:flex-row xl:items-center xl:justify-center">
 				<img src={pro} className="h-[780px] rounded-2xl" alt="proplayer" />
 				<div>
 					<h1 className="font-semibold text-2xl mb-10">

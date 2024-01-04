@@ -7,7 +7,7 @@ if (process.env.NODE_ENV != "production") {
 const express = require("express");
 const cors = require("cors");
 const connectionHandler = require("./lib/connectionHandler");
-const Videogame = require("./models/videogame");
+const videogameAPI = require("./api/videogameAPI");
 
 // CREATING APP
 const app = express();
@@ -19,17 +19,10 @@ app.use(cors());
 // CONNECT TO DB
 connectionHandler();
 
-// HTTP POST TO DB
-app.post("/videogames", async (req, res) => {
-	const { title, body } = req.body;
-
-	const videogame = await Videogame.create({
-		title: title,
-		author: author,
-	});
-
-	res.json({ videogame });
-});
+app.post("/videogames", videogameAPI.createVideogame);
+app.get("/videogames", videogameAPI.fetchVideogames);
+app.get("/videogames/:id", videogameAPI.fetchVideogame);
+app.get("/videogames/:title", videogameAPI.fetchVideogamesByTitle);
 
 // RUNNING APP
 app.listen(process.env.PORT);
