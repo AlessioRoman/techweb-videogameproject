@@ -1,13 +1,14 @@
 const Videogame = require("./../models/videogame");
 
 const createVideogame = async (req, res) => {
-	const { title, author, price, image, platform } = req.body;
+	const { title, author, price, image, platform, description } = req.body;
 
 	const videogame = await Videogame.create({
 		title: title,
 		author: author,
 		price: price,
 		image: image,
+		description: description,
 		platform: platform,
 	});
 	res.json({ videogame });

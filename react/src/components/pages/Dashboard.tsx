@@ -20,9 +20,9 @@ function Dashboard() {
 			</div>
 			<div className=" my-24">
 				<h1 className="text-2xl font-bold text-center">
-					Explore our <span className="text-primary"> games</span>
+					<span className="text-primary"> Hottest</span> ones &#128293;
 				</h1>
-				<div className="flex justify-center items- m-auto">
+				<div className="flex justify-center items-center">
 					<Gallery />
 				</div>
 			</div>

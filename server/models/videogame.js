@@ -17,6 +17,10 @@ const videogameSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	description: {
+		type: String,
+		required: true,
+	},
 	platform: {
 		type: [String],
 		required: true,
